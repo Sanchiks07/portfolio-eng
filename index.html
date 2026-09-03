@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sanija Mitniece - programming student portfolio">
     <title>Sanija Mitniece | Portfolio</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -25,7 +24,6 @@
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -52,7 +50,7 @@
 
             <div class="about-visual reveal">
                 <div class="portrait-placeholder">
-                    <img src="my-photo.jpg" alt="Sanija Mtniece">
+                    <img src="images/my-photo.jpg" alt="Sanija Mtniece">
                 </div>
                 <span class="doodle doodle-one">✦</span>
                 <span class="doodle doodle-two">⌁</span>
@@ -64,10 +62,13 @@
                 <p class="eyebrow">Hello, I'm Sanija.</p>
                 <h2>I like turning ideas into things that actually work.</h2>
                 <p>
-                    I'm a programming student with a growing focus on web development. I enjoy working on both the visual side of a website and the logic behind it, learning new technologies, solving problems and building practical projects from the ground up.
+                    I'm a programming student with a growing focus on web development. 
+                    I enjoy working on both the visual side of a website and the logic behind it, 
+                    learning new technologies, solving problems and building practical projects from the ground up.
                 </p>
                 <p>
-                    I'm responsible, independent and quick to adapt when something changes. This portfolio is a place for the projects, experiments and skills I collect along the way.
+                    I'm responsible, independent and quick to adapt when something changes. 
+                    This portfolio is a place for the projects, experiments and skills I collect along the way.
                 </p>
             </div>
         </section>
@@ -160,14 +161,15 @@
             <div class="project-grid">
                 <article class="project-card project-featured reveal">
                     <div class="project-image placeholder-dark">
-                        <span><img src="chatbot-sonja.png" alt="Project 1 - Chatbot Sonja"></span>
+                        <span><img src="images/chatbot-sonja.png" alt="Project 1 - Chatbot Sonja"></span>
                     </div>
                     <div class="project-info">
                         <span class="project-index">01</span>
                         <h3>Chatbot "Sonja"</h3>
                         <p>
-                            A chatbot created during work experience in Portugal 
-                            to help Erasmus+ students with common everyday questions.
+                            A chatbot developed during my month-long internship in Portugal to support Erasmus+ students 
+                            with common everyday questions. Designed for European Projects Development, 
+                            it provides quick and accessible information to help students navigate daily life while living and studying abroad.
                         </p>
                         <div class="project-technologies">
                             <span>PHP</span>
@@ -185,15 +187,15 @@
 
                 <article class="project-card reveal">
                     <div class="project-image placeholder-dark">
-                        <img src="problem.png" alt="Project 2 - BrainSpace">
+                        <img src="images/problem.png" alt="Project 2 - BrainSpace">
                     </div>
                     <div class="project-info">
                         <span class="project-index">02</span>
                         <h3>BrainSpace</h3>
                         <p>
-                            A web application developed to manage and organize daily tasks in one place. 
-                            The project combines a structured database with an interactive interface, 
-                            allowing users to work with stored information through a clear and practical system.
+                            A task management web application designed to make overwhelming workloads feel more manageable. 
+                            It helps users organize everything in one place, start with easier tasks and gradually move on to harder ones 
+                            while maintaining a calmer, more focused workflow.
                         </p>
                         <div class="project-technologies">
                             <span>PHP</span>
@@ -211,7 +213,7 @@
 
                 <article class="project-card reveal">
                     <div class="project-image placeholder-dark">
-                        <img src="shithead.png" alt="Project 3 - Shithead">
+                        <img src="images/shithead.png" alt="Project 3 - Shithead">
                     </div>
                     <div class="project-info">
                         <span class="project-index">03</span>
@@ -235,35 +237,20 @@
             </div>
         </section>
 
-        <section class="experience section-light" id="experience">
-            <div class="section-heading reveal">
-                <p class="eyebrow">05 · Experience</p>
-                <h2>Work experience</h2>
-            </div>
-
-            <div class="experience-card reveal">
-                <div>
-                    <span class="year">08 Jul - 04 Aug 2026</span>
-                    <h3>European Projects Development</h3>
-                    <p>Montijo, Portugal</p>
-                </div>
-                <p>
-                    Developed a chatbot for Erasmus+ students, working on the interface, server-side functionality and database-backed content.
-                </p>
-            </div>
-        </section>
-
         <section class="contact section-light" id="contact">
             <div class="contact-grid reveal">
                 <div>
-                    <p class="eyebrow">06 · Contact</p>
+                    <p class="eyebrow">05 · Contact</p>
                     <h2>Let's make something useful.</h2>
                 </div>
 
                 <div class="contact-links">
-                    <a href="mailto:mitnecesanija@gmail.com" aria-label="Send an email">mitnecesanija@gmail.com ↗</a>
+                    <div class="email-contact">
+                        <span id="email">mitnecesanija@gmail.com</span>
+                        <button type="button" class="copy-email" onclick="copyEmail()">Copy</button>
+                    </div>
                     <a href="https://github.com/Sanchiks07" aria-label="Open GitHub account" target="_blank">GitHub ↗</a>
-                    <a href="#" aria-label="Download CV">CV ↗</a>
+                    <a href="files/Sanija_Mitniece_CV_eng.pdf" download="Sanija_Mitniece_CV_eng.pdf" aria-label="Download CV">CV ↓</a>
                 </div>
             </div>
 

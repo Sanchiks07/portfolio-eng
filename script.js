@@ -45,3 +45,17 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('.reveal').forEach((element) => {
     observer.observe(element);
 });
+
+// ========== COPY EMAIL ==========
+function copyEmail() {
+    const email = document.getElementById('email').textContent;
+    const button = document.querySelector('.copy-email');
+
+    navigator.clipboard.writeText(email).then(() => {
+        button.textContent = 'Copied!';
+
+        setTimeout(() => {
+            button.textContent = 'Copy';
+        }, 1500);
+    });
+}

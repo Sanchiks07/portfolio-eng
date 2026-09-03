@@ -54,6 +54,7 @@ img {
     backdrop-filter: blur(12px);
 }
 
+/* ---------- NAVIGATION ---------- */
 .logo {
     font-family: var(--serif);
     font-size: 1.35rem;
@@ -138,6 +139,7 @@ h3 {
     font-size: clamp(1.6rem, 2.7vw, 2.5rem);
 }
 
+/* ---------- INTRODUCTION ---------- */
 .hero {
     min-height: 100vh;
     display: grid;
@@ -224,6 +226,7 @@ h3 {
     transform: rotate(-12deg);
 }
 
+/* ---------- ABOUT ME ---------- */
 .about {
     display: grid;
     grid-template-columns: minmax(240px, .9fr) minmax(300px, 1.2fr);
@@ -350,13 +353,14 @@ h3 {
     font-weight: 500;
 }
 
+/* ---------- EDUCATION ---------- */
 .education-grid {
     display: grid;
     grid-template-columns: 1.1fr 1.1fr .8fr;
     gap: 1.2rem;
 }
 
-.timeline-card, .language-card, .experience-card {
+.timeline-card, .language-card {
     border: 1px solid var(--line);
     padding: 2rem;
     background: rgba(255,255,255,.22);
@@ -397,6 +401,7 @@ h3 {
     color: var(--lavender);
 }
 
+/* ---------- PROGRAMMING SKILLS ---------- */
 .skills-layout {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
@@ -470,7 +475,7 @@ h3 {
     transform: rotate(5deg);
 }
 
-/* PROJECTS */
+/* ---------- PROJECTS ---------- */
 .projects {
     overflow: hidden;
 }
@@ -569,18 +574,7 @@ h3 {
     text-transform: uppercase;
 }
 
-.experience-card {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.experience-card > p {
-    max-width: 60ch;
-    color: #595452;
-}
-
+/* ---------- CONTACT ME ---------- */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -592,7 +586,7 @@ h3 {
     align-content: start;
 }
 
-.contact-links a {
+.contact-links a, .contact-links div {
     padding: 1rem 0;
     border-bottom: 1px solid var(--line);
 }
@@ -601,6 +595,30 @@ h3 {
     color: var(--lavender);
 }
 
+.email-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.copy-email {
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+.copy-email:hover {
+    color: var(--ink);
+}
+
+/* ---------- THANK YOU + FOOTER ---------- */
 .thank-you {
     position: relative;
     margin-top: 7rem;
@@ -645,6 +663,7 @@ h3 {
     transform: translateY(0);
 }
 
+/* ---------- RESPONSIVE DESIGN (tablet) ---------- */
 @media (max-width: 900px) {
     .menu-toggle {
         display: block;
@@ -667,7 +686,7 @@ h3 {
         display: flex;
     }
 
-    .about, .skills-layout, .contact-grid, .experience-card, .project-featured {
+    .about, .skills-layout, .contact-grid, .project-featured {
         grid-template-columns: 1fr;
     }
 
@@ -696,6 +715,7 @@ h3 {
     }
 }
 
+/* ---------- RESPONSIVE DESIGN (phone) ---------- */
 @media (max-width: 600px) {
     section {
         padding: 5rem 6vw;
