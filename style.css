@@ -249,17 +249,26 @@ h3 {
 .portrait-placeholder {
     width: min(360px, 80%);
     aspect-ratio: 4 / 5;
-    display: grid;
-    place-items: center;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
     background:
         linear-gradient(rgba(41,41,41,.1), rgba(41,41,41,.1)),
-        repeating-linear-gradient(135deg, #ddd4cc 0 12px, #e8e0d8 12px 24px);
+        repeating-linear-gradient(
+            135deg,
+            #ddd4cc 0 12px,
+            #e8e0d8 12px 24px
+        );
     border-radius: 48% 48% 44% 44% / 40% 44% 56% 60%;
-    filter: grayscale(1);
-    color: var(--muted);
-    font-size: .85rem;
     box-shadow: 0 30px 60px rgba(67,57,52,.12);
+}
+
+.portrait-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: grayscale(1);
 }
 
 .about-visual::before, .about-visual::after {

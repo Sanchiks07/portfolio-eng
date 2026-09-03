@@ -11,10 +11,7 @@ menuButton?.addEventListener('click', () => {
 });
 
 
-// ========================================
-// CLOSE MOBILE MENU AFTER CLICKING A LINK
-// ========================================
-
+// ========== CLOSE MOBILE MENU AFTER CLICKING A LINK ==========
 document.querySelectorAll('.nav a').forEach((link) => {
     link.addEventListener('click', () => {
         nav.classList.remove('open');
@@ -27,10 +24,7 @@ document.querySelectorAll('.nav a').forEach((link) => {
 });
 
 
-// ========================================
-// SCROLL REVEAL ANIMATION
-// ========================================
-
+// ========== SCROLL REVEAL ANIMATION ==========
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
@@ -47,9 +41,7 @@ const observer = new IntersectionObserver(
 );
 
 
-// Find every element with the "reveal" class
-// and watch for it entering the screen.
-
+// Find every element with the "reveal" class and watch for it entering the screen.
 document.querySelectorAll('.reveal').forEach((element) => {
     observer.observe(element);
 });
