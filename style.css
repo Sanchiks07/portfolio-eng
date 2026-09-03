@@ -470,6 +470,7 @@ h3 {
     transform: rotate(5deg);
 }
 
+/* PROJECTS */
 .projects {
     overflow: hidden;
 }
@@ -548,6 +549,24 @@ h3 {
 
 .project-links a {
     border-bottom: 1px solid var(--lavender-soft);
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.4rem 0 1.6rem;
+}
+
+.project-technologies span {
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .experience-card {
